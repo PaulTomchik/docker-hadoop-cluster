@@ -1,7 +1,8 @@
 version: '2'
 services:
     master:
-      build: ./imageBuildDir/
+        #build: ./imageBuildDir
+      image: paultomchik/hadoop-cluster
       container_name: hadoop_master
       environment:
         - CLUSTER_ROLE=master
@@ -9,13 +10,15 @@ services:
       volumes:
         - ./data/master-data/:/data/
     slave1:
-      build: ./imageBuildDir/
+        #build: ./imageBuildDir
+      image: paultomchik/hadoop-cluster
       container_name: hadoop_slave1
       hostname: slave1
       volumes:
         - ./data/slave1-data/:/data/
     slave2:
-      build: ./imageBuildDir/
+        #build: ./imageBuildDir
+      image: paultomchik/hadoop-cluster
       container_name: hadoop_slave2
       hostname: slave2
       volumes:
