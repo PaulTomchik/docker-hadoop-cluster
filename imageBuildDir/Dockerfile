@@ -1,3 +1,5 @@
+# Contains minor modifications on work by SequenceIQ
+
 # Creates pseudo distributed hadoop 2.6.0 on Ubuntu 14.04
 #
 # docker build -t sequenceiq/hadoop-ubuntu:2.6.0 .
