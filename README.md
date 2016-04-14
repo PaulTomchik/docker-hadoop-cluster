@@ -2,6 +2,9 @@
 
 ####This repo was modified to support docker-compose startup with 3 nodes and data persistence.
 
+Available on DockerHub:
+`docker pull paultomchik/hadoop-cluster`
+
 To start the cluster:
     `./startCluster.sh`
 
